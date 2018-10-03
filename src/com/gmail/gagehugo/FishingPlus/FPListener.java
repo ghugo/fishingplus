@@ -1,3 +1,14 @@
+// Licensed under the Apache License, Version 2.0 (the "License"); you may
+// not use this file except in compliance with the License. You may obtain
+// a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+// WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+// License for the specific language governing permissions and limitations
+// under the License.
 package com.gmail.gagehugo.FishingPlus;
 
 import java.util.List;
@@ -28,7 +39,7 @@ import org.bukkit.util.Vector;
 class FPListener implements Listener {
 
     private final FishingPlus plugin;
-    
+
     private String fishingMessage = "";
 
     FPListener(final FishingPlus plugin) {
@@ -40,7 +51,7 @@ class FPListener implements Listener {
         final Player player = event.getPlayer();
         final Fish hook = event.getHook();
         final Random r = new Random();
-        
+
         switch (event.getState()) {
             case CAUGHT_FISH:
                 if (plugin.totalCatchOdds.isEmpty()) {
@@ -49,7 +60,7 @@ class FPListener implements Listener {
                 }
                 event.getCaught().remove();
                 String catchType = plugin.getCatchType(r.nextInt(plugin.totalCatchOdds.size() - 1));
-                
+
                 //Determines Luck chance
                 if (player.getItemInHand().containsEnchantment(Enchantment.LUCK)) {
                     switch (catchType) {
@@ -99,12 +110,12 @@ class FPListener implements Listener {
                             default:
                                 break;
                         }
-                        
+
                         if(!catchItem.getType().equals(Material.CHEST)) {
-                            player.getWorld().dropItemNaturally(hook.getLocation(), catchItem).setVelocity(reelVelocity(player, hook));       
+                            player.getWorld().dropItemNaturally(hook.getLocation(), catchItem).setVelocity(reelVelocity(player, hook));
                         }
                 }
-                                
+
                 if (plugin.getConfig().getBoolean("FishingMessages") && !fishingMessage.isEmpty()) {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', fishingMessage));
                 }
@@ -157,7 +168,7 @@ class FPListener implements Listener {
         getFishingMessage(itemString);
         return new ItemStack(Material.getMaterial(item), 1, itemID);
     }
-    
+
     private void getFishingMessage(String itemCaught) {
         fishingMessage = plugin.getFishingMessage(itemCaught);
     }
@@ -228,7 +239,7 @@ class FPListener implements Listener {
         playerHead.setItemMeta(meta);
         return playerHead;
     }
-    
+
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         if (event.getAction() == (Action.RIGHT_CLICK_AIR)) {
