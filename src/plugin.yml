@@ -1,0 +1,27 @@
+main: com.gmail.gagehugo.FishingPlus.FishingPlus
+name: FishingPlus
+version: 1.7.9a
+author: Gage Hugo
+description: FishingPlus plugin for Craftbukkit
+commands:
+    fp:
+        description: Used to reload the config, give yourself a test fishing rod, or spawn in a treasure chest.
+        usage: /fp [reload/test/treasure]
+        permission: FishingPlus.fp
+        permission-message: You don't have permission to use this command.
+permissions:
+    FishingPlus.*:
+        description: Gives access to all nodes.
+        children:
+            FishingPlus.fp: true
+            FishingPlus.treasure: true
+            FishingPlus.junk: true
+    FishingPlus.fp:
+        description: Allows access to /fp command.
+        default: op 
+    FishingPlus.treasure:
+        description: Allows players to catch treasure items.
+        default: true
+    FishingPlus.junk:
+        description: Allows players to catch junk items.
+        default: true

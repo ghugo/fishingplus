@@ -1,0 +1,200 @@
+# FishingPlus Configuration: see http://dev.bukkit.org/bukkit-plugins/fishingplus/pages/configuration/ for more details.
+ClownfishBait: false
+FishingMessages: false
+CatchMissMessage: "Darn, that one got away."
+TotalCatchOdds:
+    Fish: 85
+    Treasure: 5
+    Junk: 10
+    Mobs: 0
+Fish:
+    RAW_FISH:
+        - 60
+        - ""
+    RAW_FISH/1:
+        - 25
+        - ""
+    RAW_FISH/2:
+        - 2
+        - ""
+    RAW_FISH/3:
+        - 13
+        - ""
+Treasure:
+    BOW/23:
+        - 1
+        - "&6You found an old bow. Some poor adventurer must have lost it."
+        - ""
+        - ""
+    ENCHANTED_BOOK:
+        - 1
+        - "&6There's a soaked book on your hook."
+        - ""
+        - ""
+    FISHING_ROD/15:
+        - 1
+        - "&6You found a discarded fishing rod. Luckily, it's still in good shape!"
+        - ""
+        - ""
+    NAME_TAG:
+        - 1
+        - "&6You caught a name tag.  It appears to be unused!"
+        - ""
+        - ""
+    SADDLE:
+        - 1
+        - "&6You discovered a waterlogged saddle. Awesome!"
+        - ""
+        - ""
+    WATER_LILY:
+        - 1
+        - "&6You pulled a lily pad from the water."
+        - ""
+        - ""
+    CHEST:
+        - 0
+        - "&6You drag up an old chest up from the depths. What could be inside?"
+        - ""
+        - ""
+Junk:
+    BOWL:
+        - 10
+        - "&bYou found a wooden bowl. Nothing was inside though..."
+        - ""
+        - ""
+    FISHING_ROD/22:
+        - 2
+        - "&bA worn fishing rod was tangled up with your own."
+        - ""
+        - ""
+    LEATHER:
+        - 10
+        - "&bYou caught a piece of soggy leather."
+        - ""
+        - ""
+    LEATHER_BOOTS/23:
+        - 10
+        - "&bYou reel in some old boots."
+        - ""
+        - ""
+    ROTTEN_FLESH:
+        - 10
+        - "&bYou caught a chunk of soggy flesh."
+        - ""
+        - ""
+    STICK:
+        - 5
+        - "&bA twig is caught on your hook."
+        - ""
+        - ""
+    STRING:
+        - 5
+        - "&bSome string got caught in your fishing line."
+        - ""
+        - ""
+    POTION:
+        - 10
+        - "&bYou caught a glass bottle."
+        - ""
+        - ""
+    BONE:
+        - 10
+        - "&bYou caught an old, slimy bone. Eww..."
+        - ""
+        - ""
+    INK_SACK:
+        - 1
+        - "&bA sack of ink from some poor squid was stuck to your hook."
+        - ""
+        - ""
+    TRIPWIRE_HOOK:
+        - 10
+        - "&bThere's a tripwire hook on your hook."
+        - ""
+        - ""
+Mobs:
+    PIG:
+        - 65
+        - "&aUm, you saved a pig from drowning..."
+        - ""
+    SQUID:
+        - 20
+        - "&aYou snagged a squid."
+        - ""
+    SKELETON:
+        - 5
+        - "&cHoly crap! A skeleton!!!"
+        - ""
+    SILVERFISH:
+        - 10
+        - "&cARG! A silverfish!"
+        - ""
+TreasureChest:
+    RECORD_3: 1
+        - ""
+        - ""
+    SADDLE: 5
+        - ""
+        - ""
+    RECORD_4:
+        - 1
+        - ""
+        - ""
+    EMERALD: 5
+    RECORD_5: 1
+    DOUBLE_PLANT/4: 10
+    NAME_TAG: 5
+    RECORD_6: 1
+    SULPHUR: 15
+    RECORD_7: 1
+    ENDER_PEARL: 5
+    RECORD_8: 2
+    IRON_INGOT: 10
+    RECORD_9: 1
+    CAKE: 8
+    RECORD_10: 1
+    BREAD: 15
+    RECORD_11: 1
+    REDSTONE_WIRE: 12
+    RECORD_12: 1
+    STRING: 15
+    GOLD_INGOT: 8
+    SKULL_ITEM: 1
+FishingEnchants:
+    UNENCHANTED: 0
+    LUCK: 1
+    LURE: 1
+    DURABILITY: 1
+BowEnchants:
+    UNENCHANTED: 0
+    ARROW_DAMAGE: 1
+    ARROW_FIRE: 1
+    ARROW_INFINITE: 1
+    ARROW_KNOCKBACK: 1
+    DURABILITY: 1
+BookEnchants:
+    ARROW_DAMAGE: 1
+    ARROW_FIRE: 1
+    ARROW_INFINITE: 1
+    ARROW_KNOCKBACK: 1
+    DAMAGE_ALL: 1
+    DAMAGE_ARTHROPODS: 1
+    DAMAGE_UNDEAD: 1
+    DIG_SPEED: 1
+    DURABILITY: 1
+    FIRE_ASPECT: 1
+    KNOCKBACK: 1
+    LOOT_BONUS_BLOCKS: 1
+    LOOT_BONUS_MOBS: 1
+    OXYGEN: 1
+    PROTECTION_ENVIRONMENTAL: 1
+    PROTECTION_EXPLOSIONS: 1
+    PROTECTION_FALL: 1
+    PROTECTION_FIRE: 1
+    PROTECTION_PROJECTILE: 1
+    SILK_TOUCH: 1
+    THORNS: 1
+    WATER_WORKER: 1
+CustomPlayerHeads: false
+PlayerHeads:
+    - Aeyther
