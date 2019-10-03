@@ -2,7 +2,7 @@ main: com.gmail.gagehugo.FishingPlus.FishingPlus
 name: FishingPlus
 version: 1.7.9a
 author: Gage Hugo
-description: FishingPlus plugin for Craftbukkit
+description: FishingPlus plugin for Craftbukkit (Now Mostly In-Game)
 commands:
     fp:
         description: Used to reload the config, give yourself a test fishing rod, or spawn in a treasure chest.
