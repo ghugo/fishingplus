@@ -3,9 +3,9 @@ ClownfishBait: false
 FishingMessages: false
 CatchMissMessage: "Darn, that one got away."
 TotalCatchOdds:
-    Fish: 85
+    Fish: 75
     Treasure: 5
-    Junk: 10
+    Junk: 20
     Mobs: 0
 Fish:
     RAW_FISH:
