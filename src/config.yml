@@ -9,16 +9,16 @@ TotalCatchOdds:
     Mobs: 0
 Fish:
     RAW_FISH:
-        - 60
+        - 50
         - ""
     RAW_FISH/1:
-        - 25
+        - 30
         - ""
     RAW_FISH/2:
-        - 2
+        - 5
         - ""
     RAW_FISH/3:
-        - 13
+        - 15
         - ""
 Treasure:
     BOW/23:
