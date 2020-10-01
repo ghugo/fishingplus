@@ -30,7 +30,7 @@ public class FPCommands implements CommandExecutor {
                 switch (args[0]) {
                     case "reload":
                         plugin.reload();
-                        sender.sendMessage(ChatColor.GOLD + "FishingPlus Reloaded");
+                        sender.sendMessage(ChatColor.GOLD + "FishingPlus Configuration Reloaded");
                         break;
                     case "treasure":
                         if (!(sender instanceof Player)) {
@@ -38,7 +38,7 @@ public class FPCommands implements CommandExecutor {
                             return true;
                         }
                         execute.spawnChest((Player) sender);
-                        sender.sendMessage(ChatColor.GOLD + "Spawned a treasure chest.");
+                        sender.sendMessage(ChatColor.GOLD + "Treasure chest created.");
                         break;
                     case "test":
                         if (!(sender instanceof Player)) {
@@ -53,7 +53,7 @@ public class FPCommands implements CommandExecutor {
                         testRod.addEnchantment(Enchantment.LUCK, 3);
                         testRod.addUnsafeEnchantment(Enchantment.DURABILITY, 10);
                         ((Player) sender).getWorld().dropItemNaturally(((Player) sender).getLocation(), testRod);
-                        sender.sendMessage(ChatColor.GOLD + "Testing Purposes Only!");
+                        sender.sendMessage(ChatColor.GOLD + "This is for testing Purposes Only!");
                         break;
                     default:
                         return false;
